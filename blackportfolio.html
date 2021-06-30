@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+	<title>portfoliooo</title>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+        <style>
+            html{font-size:62.5%;}
+            *{padding:0; margin:0;}
+            header{width:100%; background:rgb(0,0,0,0.9); display:flex; align-items:center;}
+            #a{width:70%; text-align:center;  }
+            #a h1{font-size:10rem; color:white;}
+            #b{width:30%;}
+            #b img{width:100%;}
+            /*<!--------------------menu and frame--------------->*/
+            .menu {display:flex; justify-content:space-around; align-items:center;  width:100%;  height:5rem; border:.1rem solid;}
+          .menu a{ box-shadow:.2rem .2rem .4rem .4rem black; black;text-decoration:none; font-size:2.5rem; color:black; font-weight:bold; position:relative;}
+          .menu a::before{
+                   content:"";
+                   top:100%;
+                   width:0%;
+                   height:.4rem;
+                   position:absolute;
+                   background:white;
+ transition:linear all 0.5s;
+
+          }
+          .menu a:hover::before{  width:100%; }
+#myframe{width:100%; height:60rem;}
+
+
+  
+       /*<!-----media--->*/
+       @media(max-width:680px){
+           html{font-size:50%;}
+       }      
+       @media(max-width:480px){
+           html{font-size:40%;}
+       }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="a">
+                 <h1>gautam</h1>
+            </div>
+            <div id="b">
+                <img src="https://img.freepik.com/free-vector/kingkong-face-logo-vector_83738-239.jpg?size=338&ext=jpg">
+            </div>
+        </header>
+<!--frame work and menu -------------------------------------------------------------------------->
+
+<h1 class="animate__animated animate__bounce animate__infinite	infinite">click below</h1>
+        <div class="menu">
+            <a href="e://html prog//res.html" target="myframe">restaurant</a>
+            <a href="e://html prog//india.html" target="myframe">tourist</a>
+            <a href="e://html prog//portfolio.html" target="myframe">portfolio</a>
+            <a href="e://black//black.html" target="myframe">black</a>
+      
+        </div>
+        <iframe name="myframe" id="myframe"></iframe>
+    </body>
+</html>
